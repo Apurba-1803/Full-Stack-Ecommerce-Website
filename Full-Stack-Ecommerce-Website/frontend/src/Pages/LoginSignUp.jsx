@@ -16,7 +16,7 @@ export const LoginSignUp = () => {
   const login = async()=>{
       console.log("Login function executed")
       let responseData;
-    await fetch("http://localhost:4000/login",{
+    await fetch("https://full-stack-ecommerce-website-backend-d6ik.onrender.com/login",{
       method:"POST",
       headers:{
         Accept:'application/json',
@@ -37,7 +37,7 @@ export const LoginSignUp = () => {
   const signup = async()=>{
     console.log("signup function executed", formData)
     let responseData;
-    await fetch("http://localhost:4000/signup",{
+    await fetch("https://full-stack-ecommerce-website-backend-d6ik.onrender.com/signup",{
       method:"POST",
       headers:{
         Accept:'application/json',
